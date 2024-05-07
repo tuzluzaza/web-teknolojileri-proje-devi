@@ -1,0 +1,121 @@
+
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Poppins",sans-serif;
+}
+
+body{
+    
+        min-height: 100vh;
+        background: url('corumsaatkulesıcamı.jpg') no-repeat;
+        background-attachment: fixed; /* Arka plan resmi sabit kalacak şekilde ayarlanır */
+        background-size: cover;
+        background-position: center;
+    
+}
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px;
+background: ;
+display: flex;
+justify-content:space-between ;
+align-items: center;
+z-index:100;
+background:rgba(128, 128, 128, 0); /* Beyaz arka plan ve %50 opaklık */
+}
+
+.hosdiv {
+width: 100px;
+align-content: center;
+}
+
+.hosgeldiniz{
+font-size: 30px;
+color:white;
+text-decoration: none;
+font-weight: 500;
+}
+
+
+ul {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+ul li {
+    display: inline-block;
+    line-height: ;
+    float: left;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    
+}
+.arayuzsecim {
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.arayuzsecim a{
+position: relative;
+font-size: 20px;
+color:#fff;
+text-decoration: none;
+font-weight: 300;
+margin-left: 40px;
+margin-right: auto;
+}
+
+.arayuzsecim a::before{
+
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 2px;
+background:#fff ;
+transition:.3s;
+}
+
+.arayuzsecim a:hover::before{
+    width: 100%;
+}
+
+
+
+.bilgi-kutusu{
+    position: relative;
+    font-size: 22px;
+    width: 90%;
+    padding: 20px;
+    background:rgba(192, 192, 192, 0.7); /* Beyaz arka plan ve %50 opaklık */
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: left;
+   /* Pozisyonunu sabitlemek için */
+    top: 250px; /* Yukarıdan 50px aşağıya kaydır */
+    left: 50px; /* Sağa 50px kaydır */
+}
+.bilgi-kutusu2{
+    position: relative;
+    font-size: 22px;
+    width: 90%;
+    padding: 20px;
+    background:rgba(192, 192, 192, 0.7); /* Beyaz arka plan ve %50 opaklık */
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: left;
+   /* Pozisyonunu sabitlemek için */
+    top: 500px; /* Yukarıdan 50px aşağıya kaydır */
+    left: 50px; /* Sağa 50px kaydır */
+}
+
