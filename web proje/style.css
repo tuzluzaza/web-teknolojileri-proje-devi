@@ -48,7 +48,7 @@ footer {
 
 
 
-.bilgilendirme {
+#bilgilendirme {
  font-size: 20px;
     width: 80%; 
     font-weight: bold; 
@@ -61,7 +61,7 @@ footer {
             top: 20px; 
             left: 20px; 
 }
-.kisiselbilgiler {
+#kisiselbilgiler {
     font-size: 20px;
     width: 80%; 
     font-weight: bold; 
@@ -75,145 +75,86 @@ footer {
             left: 20px; 
    }
 
-   .kendinitanit-container {
-    font-weight: bold; 
-    margin: 50px auto; 
-    font-size: 25px;
-    width: 50%;
-    margin: 50px 100px;
-    padding: 50px 20px 20px; 
-    background-color: rgba(145, 196, 219, 0.6);
-    border-radius: 10px;
-    margin-left: 350px;
-}
 
-.kendinitanit-container p {
-margin-top: 10px;
-
-}
-
-table {
-    vertical-align: top; 
-    width: 80%; 
-    margin: 0 auto; 
-    border-collapse: collapse; 
-}
-
-table img {
-    width: 200px; 
-    display: block; 
-    margin-right: 20px; 
-}
-
-table td {
-    vertical-align: top; 
-}
-
-table p {
-    margin-top: 0; 
-    margin-bottom: 5px; 
-}
-
-   .hobiler {
-    font-weight: bold; 
+#hobi{
     font-size: 20px;
-    width: 80% ;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(145, 196, 219, 0.6);
+    width: 30%; 
+  text-align: center; /* Metni yatayda ortalar */
+        display: flex;
+        align-items: center; /* Metni dikeyde ortalar */
+        justify-content: center; /* Metni yatayda ve dikeyde ortalar */
+        height: 50px; 
+        font-weight: bold; 
+            background-color: rgba(145, 196, 219, 0.6);
+            border: 0.3px solid rgba(68, 68, 68, 1); 
+           
+
 }
 
-.hobi {
-    display: inline-block; 
-    margin-right: 20px; 
-}
-
-.hobi img {
-    width: 270px;
-    height: 300; 
-    display: block; 
-    margin-bottom: 10px; 
-}
-
-
-
-.resim-aciklama-container {
-    font-weight: bold; 
+#benkimim{
     font-size: 20px;
-    width: 30%;
-    margin: 50px 100px;
-    padding: 20px;
+    font-weight: bold;
+
+    top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
+    left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
+    transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
     background-color: rgba(145, 196, 219, 0.6);
-    border-radius: 10px;
-    margin-left: 150px;
+    border: 0.3px solid rgba(68, 68, 68, 1); 
 }
 
-.resim-aciklama {
-    display: flex; 
-    margin-bottom: 20px; 
-    overflow: hidden;
-}
 
-.resim-aciklama img {
+
+#hobiislem{
     
-    width: 200px; 
-    height: 160px; 
-    border-radius: 5px; 
-}
-
-.resim-aciklama p {
-    margin-top: 0; 
-            margin-bottom: 0; 
-            margin-left: 10px;
-}
-
-.gs {
-    font-weight: bold; 
-    width: 30%; 
-    height: 350px;
-    margin: 50px auto; 
     background-color: rgba(145, 196, 219, 0.6);
-    padding: 20px; 
-    border: 0.3px solid rgba(68, 68, 68, 1); 
-    border-radius: 5px; 
-    position: relative; 
-    top: 20px; 
-    left: 400px; 
-    margin-top: -1100px
+            border: 0.3px solid rgba(68, 68, 68, 1); 
+            font-weight: bold;
+}
+#hobiislem img{
+    weight: 300px ;
+    height: 300px;
 }
 
-.gs img {
-    width: 450px; 
-    height: 220px; 
-    border-radius: 5px; 
-}
-
-.gs p {
-    margin-top: 0; 
-            margin-bottom: 0; 
-            margin-left: 10px;
-}
-
-.muzik {
-    font-weight: bold; 
-    width: 30%; 
-    height: 350px;
-    margin: 50px auto; 
+#gs{
+    font-size: 20px;
     background-color: rgba(145, 196, 219, 0.6);
-    padding: 20px; 
     border: 0.3px solid rgba(68, 68, 68, 1); 
-    border-radius: 5px; 
-    position: relative;
-    top: 20px;
-    left: 400px; 
+    font-weight: bold;
+    
+}
+#okullar{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 0.3px solid rgba(68, 68, 68, 1); 
+    top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
+    left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
+    transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
+    width: 70%;
+
+}
+#corumslide img{
+    weight: 1200px ;
+    height: 700px;
 }
 
-.muzik img {
-    width: 450px; 
-    height: 220px; 
-    border-radius: 5px; 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .okudugumokullar-container h2{
     text-align: center; 
