@@ -138,134 +138,32 @@ footer {
     height: 700px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.okudugumokullar-container h2{
-    text-align: center; 
-}
-
-.okudugumokullar-container {
-    font-weight: bold; 
-    font-size: 25px;
-    color: black;
-    width: 80%;
-    margin: 50px 100px;
-    padding: 20px;
-    background-color: rgba(145, 196, 219, 0.6);
-    border-radius: 10px;
-    margin-left: 150px;
-}
-
-.okullar {
-    display: flex; 
-    flex-direction: column; 
-    margin-bottom: 100px; 
-    overflow: hidden; 
-}
-
-.okullar h3 {
-    text-align: center; 
-}
-
-.okullar img {
-    width: 70%; 
-    height: 400px; 
-    border-radius: 5px;
-    margin: 0 auto; 
-}
-
-.okullar p {
-    margin-top: 0; 
-    margin-bottom: 0; 
-    margin-left: 10px; 
-}
-
-.egitimbilgi {
-    font-weight: bold; 
-    font-size: 20px;
-       width: 80%; 
-     
-               margin: 50px auto; 
-               background-color: rgba(145, 196, 219, 0.6);
-               padding: 20px; 
-               border: 0.3px solid rgba(68, 68, 68, 1); 
-               border-radius: 5px; 
-               position: relative; 
-               top: 20px; 
-               left: 20px; 
-   }
-   .corumbilgi1 {
-    font-size: 20px;
-       width: 80%; 
-       font-weight: bold; 
-               margin: 50px auto; 
-               background-color: rgba(145, 196, 219, 0.6);
-               padding: 20px; /* İç boşluk */
-               border: 0.3px solid rgba(68, 68, 68, 1); 
-               border-radius: 5px; 
-               position: relative; 
-               top: 20px; 
-               left: 20px; 
-   }
-   .corumbilgi2 {
-    font-size: 20px;
-       width: 80%; 
-       font-weight: bold; 
-               margin: 50px auto; 
-               background-color: rgba(145, 196, 219, 0.6);
-               padding: 20px; /* İç boşluk */
-               border: 0.3px solid rgba(68, 68, 68, 1); 
-               border-radius: 5px; 
-               position: relative; 
-               top: 20px; 
-               left: 20px; 
-   }
-   .corumbilgi3 {
-    font-size: 20px;
-       width: 80%; 
-       font-weight: bold; 
-               margin: 50px auto; 
-               background-color: rgba(145, 196, 219, 0.6);
-               padding: 20px; /* İç boşluk */
-               border: 0.3px solid rgba(68, 68, 68, 1); 
-               border-radius: 5px; 
-               position: relative; 
-               top: 20px; 
-               left: 20px; 
-   }
-
-   .corumnufus {
-    font-weight: bold; 
-    margin: 50px auto; 
-    font-size: 22px;
-    width: 50%;
-    margin: 50px 100px;
-    padding: 50px 0px 20px; 
-    background-color: rgba(145, 196, 219, 0.6);
-    border-radius: 10px;
-    margin-left: 350px;
+#gezilecekyer img{
+    weight: 1200px ;
+    height: 700px;
 }
 
 
-.corumnufus img{
-    weight: 300px ;
-    height: 300px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
