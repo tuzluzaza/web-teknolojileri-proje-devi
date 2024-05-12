@@ -143,6 +143,33 @@ footer {
     height: 700px;
 }
 
+#gezilecekyerler {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 0.3px solid rgba(68, 68, 68, 1); 
+}
+
+
+
+
+#tarihi {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 0.3px solid rgba(68, 68, 68, 1); 
+    top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
+    left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
+    transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
+    width: 70%;
+}
+#tarihi img {
+
+    weight: 1200px ;
+    height: 700px;
+}
+
+
 
 
 
