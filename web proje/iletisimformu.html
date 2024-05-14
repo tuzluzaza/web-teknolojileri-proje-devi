@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Sayfa</title>
+    <title>Çorum Web -İletişim Formu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
-<header>
-    <h1>Hoş Geldiniz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-İletişim Formu</h1>
-</header>
+<header class="header">
+    <a href="anasayfa.html" class="logo">İLETİŞİM FORMU</a>
 
-<nav>
+
+
+<nav class="navbar">
     <a href="anasayfa.html">Hakkımda</a>
     <a href="ozgecmis.html">Özgeçmiş</a>
     <a href="sehrim.html">Şehrim</a>
@@ -24,10 +26,91 @@
     <a href="iletisimformu.html">Form Oluştur</a>
 </nav>
 
+</header>
 
-<footer>
-    <p>Telif Hakkı © 2024 - Örnek Şirket</p>
+<br><br><br><br><br>
+
+<div class="container" id="corumbilgi">
+
+  <p>ÇORUM WEB İLETİŞİM FORMU</p>
+
+</div>
+
+<br><br><br>
+
+<div class="container" id="iletisimformu">
+<form action="form.php" method="post">
+
+    <div class="container" >
+      <br>
+      <h2 style="text-align: center;">FORM</h2>
+      <br>
+      <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="isim">İsminiz:</label><br>
+        <input type="text" id="isim" name="isim" required><br><br>
+        
+        <label for="soyisim">Soyisminiz:</label><br>
+        <input type="text" id="soyisim" name="soyisim" required><br><br>
+        
+        <label for="cinsiyet">Cinsiyetiniz:</label><br>
+        <input type="radio" id="erkek" name="cinsiyet" value="Erkek" required>
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="Kadın" required>
+        <label for="kadin">Kadın</label><br><br>
+        
+        <label for="yas_araligi">Yaş Aralığınız:</label><br>
+        <input type="checkbox" id="10-18" name="yas_araligi[]" value="10-18">
+        <label for="10-18">10-18</label>
+        <input type="checkbox" id="18-25" name="yas_araligi[]" value="18-25">
+        <label for="18-25">18-25</label>
+        <input type="checkbox" id="25-35" name="yas_araligi[]" value="25-35">
+        <label for="25-35">25-35</label>
+        <input type="checkbox" id="35plus" name="yas_araligi[]" value="35+">
+        <label for="35plus">35+</label><br><br>
+        
+        <label for="bolge">Yaşadığınız Bölge:</label><br>
+        <select id="bolge" name="bolge" required>
+            <option value="Marmara">Marmara</option>
+            <option value="Ege">Ege</option>
+            <option value="Akdeniz">Akdeniz</option>
+            <option value="İç Anadolu">İç Anadolu</option>
+            <option value="Doğu Anadolu">Doğu Anadolu</option>
+            <option value="Güneydoğu Anadolu">Güneydoğu Anadolu</option>
+            <option value="Karadeniz">Karadeniz</option>
+        </select><br><br>
+        
+        <label for="profil_foto">Profil Fotoğrafı:</label><br>
+        <input type="file" id="profil_foto" name="profil_foto" accept="image/*" required><br><br>
+        
+        <label for="is_yapilan_sektor">İş Yapılan Sektör:</label><br>
+        <select id="is_yapilan_sektor" name="is_yapilan_sektor" required>
+            <option value="Öğrenci">Öğrenci</option>
+            <option value="Kamu Personeli">Kamu Personeli</option>
+            <option value="Özel Sektör">Özel Sektör</option>
+            <option value="İşsiz">İşsiz</option>
+        </select><br><br>
+        
+        <label for="telefon">Telefon Numaranız:</label><br>
+        <input type="tel" id="telefon" name="telefon" pattern="[0-9]{11}" placeholder="Örn: 05551051010" required><br><br>
+        
+        <label for="email">Email Adresiniz:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="gorusler">Görüşleriniz:</label><br>
+        <textarea id="gorusler" name="gorusler" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Gönder">
+    </form>
+    </div>
+  </div>
+
+
+</form>
+
+<br><br><br><br><br><br><br><br>
+
+<footer >
+    <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner -İletişim Formu</p>
 </footer>
-
+<script src="form.js"></script>
 </body>
 </html>

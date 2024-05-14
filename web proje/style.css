@@ -5,71 +5,107 @@ body {
     background-image: url('foto/corumsaatkulesıcamı.jpg'); 
     background-size: cover; 
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
 }
 
 
 
-header {
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: rgba(51, 99, 136, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+   
+    
+}
+
+.logo{
+
+font-size: 32px;
+color: #fff;
+text-decoration: none;
+
+}
+
+.navbar a {
+    position: relative;
     font-size: 18px;
-    background-color: rgba(51, 99, 136, 0.9);
     color: #fff;
-    padding: 1px 1px;
-    text-align: center;
+    font-weight: 100;
+text-decoration: none;
+margin-left: 30px;
+
 }
 
-nav {
-    font-size: 18px;
-    background-color: rgba(69, 117, 153, 0.9);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+.navbar a::before{
+content:'';
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 2px;
+color: #fff;
+background: #fff;
+transition: .3s;
 }
 
-nav a {
+.navbar a:hover:before{
+    width: 100%; 
     color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.site-content {
+    flex: 1;
+}
+
+
+.site-content {
+    flex: 1;
+
 }
 
 footer {
-    font-size: 18px;
-    background-color: rgba(69, 117, 153, 0.9);
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
+    font-size: 20px;
+    padding: 10px; /* İç boşluk */
+     border: 0.3px solid rgba(68, 68, 68, 1); 
+     background: rgba(51, 99, 136, 0.9);
+    margin-top: auto;
+}
 
 
 #bilgilendirme {
  font-size: 20px;
-    width: 80%; 
-    font-weight: bold; 
+    width: 60%; 
+    
             margin: 50px auto; 
             background-color: rgba(145, 196, 219, 0.6);
             padding: 20px; /* İç boşluk */
             border: 0.3px solid rgba(68, 68, 68, 1); 
-            border-radius: 5px; 
+            border-radius: 15px; 
             position: relative; 
             top: 20px; 
             left: 20px; 
 }
 #kisiselbilgiler {
     font-size: 20px;
-    width: 80%; 
-    font-weight: bold; 
+    width: 60%; 
+    
             margin: 50px auto; 
             background-color: rgba(145, 196, 219, 0.6);
             padding: 20px; 
             border: 0.3px solid rgba(68, 68, 68, 1); 
-            border-radius: 5px; 
+            border-radius: 15px; 
             position: relative; 
             top: 20px; 
             left: 20px; 
@@ -83,75 +119,108 @@ footer {
         align-items: center; /* Metni dikeyde ortalar */
         justify-content: center; /* Metni yatayda ve dikeyde ortalar */
         height: 50px; 
-        font-weight: bold; 
+        
             background-color: rgba(145, 196, 219, 0.6);
             border: 0.3px solid rgba(68, 68, 68, 1); 
-           
+            border-radius: 15px; 
 
 }
 
+
 #benkimim{
     font-size: 20px;
-    font-weight: bold;
+  
 
     top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
     left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
     transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
+    border-radius: 15px; 
+}
+
+#benkimim img{
+    height: 388px; 
+    border-radius: 15px; 
 }
 
 #hobiislem{
-    
+
     background-color: rgba(145, 196, 219, 0.6);
             border: 0.3px solid rgba(68, 68, 68, 1); 
-            font-weight: bold;
+        
+            border-radius: 15px; 
 }
 
 #hobiislem img{
     weight: 300px ;
-    height: 300px;
+    height: 200px;
+    border-radius: 15px; 
 }
 
 #gs{
+    border-radius: 15px; 
     weight: 80% ;
     font-size: 20px;
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
-    font-weight: bold;
+    
+    border-radius: 15px; 
     
 }
 
 #okullar{
     font-size: 20px;
-    font-weight: bold;
+    
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
     top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
     left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
     transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
     width: 70%;
+    border-radius: 15px; 
+
+}
+
+#okullar img{
+    weight: 600px ;
+    height: 500px;
 
 }
 
 #corumslide img{
-    weight: 1200px ;
-    height: 700px;
+    
+    weight: 550px ;
+    height: 550px;
 }
 
 #gezilecekyer img{
-    weight: 1200px ;
-    height: 700px;
+    weight: 750px ;
+    height: 650px;
+    border-radius: 15px; 
 }
 
 #gezilecekyerler {
     font-size: 20px;
-    font-weight: bold;
+   
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
+    border-radius: 15px; 
+}
+
+
+#gez{
+
+    font-size: 20px;
+    width: 60%; 
+            margin: 50px auto; 
+            border-radius: 15px; 
+            top: 20px; 
+            left: 20px; 
 }
 
 #tarihi {
+    
     font-size: 20px;
     font-weight: bold;
     background-color: rgba(145, 196, 219, 0.6);
@@ -160,31 +229,35 @@ footer {
     left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
     transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
     width: 70%;
+    border-radius: 15px; 
 }
 
 #tarihi img {
-
+    border-radius: 15px; 
     weight: 1200px ;
     height: 700px;
 }
 
 #corum{
+    width: 100%; 
     font-size: 20px;
     font-weight: bold;
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
-
+    border-radius: 15px; 
 }
+
+
 
 #corumbilgi{
     font-size: 20px;
-    width: 80%; 
+    width: 700px; 
     font-weight: bold; 
             margin: 50px auto; 
             background-color: rgba(145, 196, 219, 0.6);
             padding: 20px; /* İç boşluk */
             border: 0.3px solid rgba(68, 68, 68, 1); 
-            border-radius: 5px; 
+            border-radius: 15px; 
             position: relative; 
             top: 20px; 
             left: 20px; 
@@ -192,15 +265,22 @@ footer {
 
 }
 
+#corum img{
+
+height: 300px;
+
+
+}
+
 #slideaciklama{
     font-size: 20px;
-    width: 80%; 
+    width: 50%; 
     font-weight: bold; 
             margin: 50px auto; 
             background-color: rgba(145, 196, 219, 0.6);
             padding: 20px; /* İç boşluk */
-            border: 0.3px solid rgba(68, 68, 68, 1); 
-            border-radius: 5px; 
+            border: 1px solid rgba(68, 68, 68, 1); 
+            border-radius: 15px; 
             position: relative; 
             top: 20px; 
             left: 20px; 
@@ -209,32 +289,47 @@ footer {
 }
 
 #hesap{
-
+    border-radius: 15px; 
     font-size: 20px;
-    font-weight: bold;
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
 
 }
 
-#f{
-    width: 500px;
-  height: 300px;
+#hesaplar{
+    border-radius: 15px; 
+    width: 450px;
+  height: 200px;
 }
 
 #havadurumu{
     font-size: 20px;
+  
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 0.3px solid rgba(68, 68, 68, 1); 
+}
+
+#login{
+    width: 40%;
+    border-radius: 15px; 
+height: 350px;
+    font-size: 20px;
     font-weight: bold;
     background-color: rgba(145, 196, 219, 0.6);
     border: 0.3px solid rgba(68, 68, 68, 1); 
 }
 
+#iletisimformu{
+    text-align: center;
+    width: 40%;
+    border-radius: 15px; 
+    height: 1500px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(145, 196, 219, 0.6);
+        border: 0.3px solid rgba(68, 68, 68, 1); 
 
-
-
-
-
-
+}
 
 
 

@@ -3,7 +3,7 @@
     $sifre = $_POST["exampleInputPassword1"];
 
     $bkuladi = "abdullah.cobaner@ogr.sakarya.edu.tr";
-    $bsifre = "asddsa123";
+    $bsifre = "B231210097";
 
     if ($kuladi == $bkuladi && $sifre == $bsifre) {
         // Giriş başarılı ise yönlendir
