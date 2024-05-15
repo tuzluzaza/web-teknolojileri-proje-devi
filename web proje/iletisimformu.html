@@ -12,16 +12,16 @@
 <body>
 
 <header class="header">
-    <a href="anasayfa.html" class="logo">İLETİŞİM FORMU</a>
+    <a href="index.html" class="logo">İLETİŞİM FORMU</a>
 
 
 
 <nav class="navbar">
-    <a href="anasayfa.html">Hakkımda</a>
+    <a href="index.html">Hakkımda</a>
     <a href="ozgecmis.html">Özgeçmiş</a>
     <a href="sehrim.html">Şehrim</a>
     <a href="mirasimiz.html">Mirasımız</a>
-    <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+    <a href="havadurumu.html">Hava Durumu</a>
     <a href="login.html">Log in</a>
     <a href="iletisimformu.html">Form Oluştur</a>
 </nav>
@@ -45,7 +45,6 @@
       <br>
       <h2 style="text-align: center;">FORM</h2>
       <br>
-      <form action="/submit" method="POST" enctype="multipart/form-data">
         <label for="isim">İsminiz:</label><br>
         <input type="text" id="isim" name="isim" required><br><br>
         
@@ -58,15 +57,15 @@
         <input type="radio" id="kadin" name="cinsiyet" value="Kadın" required>
         <label for="kadin">Kadın</label><br><br>
         
-        <label for="yas_araligi">Yaş Aralığınız:</label><br>
-        <input type="checkbox" id="10-18" name="yas_araligi[]" value="10-18">
-        <label for="10-18">10-18</label>
-        <input type="checkbox" id="18-25" name="yas_araligi[]" value="18-25">
+        <label for="yas">Yaş Aralığı:</label><br>
+        <input type="radio" id="15-18" name="yas" value="15-18" required>
+        <label for="15-18">15-18</label>
+        <input type="radio" id="18-25" name="yas" value="18-25" required>
         <label for="18-25">18-25</label>
-        <input type="checkbox" id="25-35" name="yas_araligi[]" value="25-35">
+        <input type="radio" id="25-35" name="yas" value="25-35" required>
         <label for="25-35">25-35</label>
-        <input type="checkbox" id="35plus" name="yas_araligi[]" value="35+">
-        <label for="35plus">35+</label><br><br>
+        <input type="radio" id="35+" name="yas" value="35+" required>
+        <label for="35+">35+</label><br><br>
         
         <label for="bolge">Yaşadığınız Bölge:</label><br>
         <select id="bolge" name="bolge" required>
@@ -79,8 +78,7 @@
             <option value="Karadeniz">Karadeniz</option>
         </select><br><br>
         
-        <label for="profil_foto">Profil Fotoğrafı:</label><br>
-        <input type="file" id="profil_foto" name="profil_foto" accept="image/*" required><br><br>
+    
         
         <label for="is_yapilan_sektor">İş Yapılan Sektör:</label><br>
         <select id="is_yapilan_sektor" name="is_yapilan_sektor" required>
@@ -99,7 +97,6 @@
         <textarea id="gorusler" name="gorusler" rows="4" cols="50"></textarea><br><br>
         
         <input type="submit" value="Gönder">
-    </form>
     </div>
   </div>
 
@@ -108,8 +105,8 @@
 
 <br><br><br><br><br><br><br><br>
 
-<footer >
-    <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner -İletişim Formu</p>
+<footer>
+    <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner - İletişim Formu</p>
 </footer>
 <script src="form.js"></script>
 </body>
