@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('foto/corumsaatkulesıcamı.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: rgba(51, 99, 136, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+   
+    
+}
+
+.logo{
+
+font-size: 32px;
+color: #fff;
+text-decoration: none;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 100;
+text-decoration: none;
+margin-left: 30px;
+
+}
+
+.navbar a::before{
+content:'';
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 2px;
+color: #fff;
+background: #fff;
+transition: .3s;
+}
+
+.navbar a:hover:before{
+    width: 100%; 
+    color: #fff;
+}
+
+.site-content {
+    flex: 1;
+}
+
+
+.site-content {
+    flex: 1;
+
+}
+
+footer {
+    text-align: center;
+
+    font-size: 20px;
+    padding: 10px; /* İç boşluk */
+     border: 3px solid rgba(68, 68, 68, 1); 
+     background: rgba(51, 99, 136, 0.9);
+    margin-top: auto;
+}
+
+
+#bilgilendirme {
+ font-size: 20px;
+    width: 60%; 
+    
+            margin: 50px auto; 
+            background-color: rgba(145, 196, 219, 0.6);
+            padding: 20px; /* İç boşluk */
+            border: 3px solid rgba(68, 68, 68, 1); 
+            border-radius: 15px; 
+            position: relative; 
+            top: 20px; 
+            left: 20px; 
+}
+#kisiselbilgiler {
+    font-size: 20px;
+    width: 60%; 
+    
+            margin: 50px auto; 
+            background-color: rgba(145, 196, 219, 0.6);
+            padding: 20px; 
+            border: 3px solid rgba(68, 68, 68, 1); 
+            border-radius: 15px; 
+            position: relative; 
+            top: 20px; 
+            left: 20px; 
+   }
+
+#hobi{
+    font-size: 20px;
+    width: 30%; 
+  text-align: center; /* Metni yatayda ortalar */
+        display: flex;
+        align-items: center; /* Metni dikeyde ortalar */
+        justify-content: center; /* Metni yatayda ve dikeyde ortalar */
+        height: 50px; 
+        
+            background-color: rgba(145, 196, 219, 0.6);
+            border: 3px solid rgba(68, 68, 68, 1); 
+            border-radius: 15px; 
+
+}
+
+
+#benkimim{
+    font-size: 20px;
+  
+
+    top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
+    left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
+    transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+    border-radius: 15px; 
+}
+
+#benkimim img{
+    height: 388px; 
+    border-radius: 15px; 
+}
+
+#hobiislem{
+
+    background-color: rgba(145, 196, 219, 0.6);
+            border: 3px solid rgba(68, 68, 68, 1); 
+        
+            border-radius: 15px; 
+}
+
+#hobiislem img{
+   
+    height: 200px;
+    border-radius: 12px; 
+}
+
+#gs{
+    border-radius: 15px; 
+  
+    font-size: 20px;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+    
+    border-radius: 15px; 
+    
+}
+
+#gs img{
+    border-radius: 12px; 
+
+}
+
+#okullar{
+    font-size: 20px;
+    
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+    top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
+    left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
+    transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
+    width: 70%;
+    border-radius: 15px; 
+
+}
+
+#okullar img{
+    border-radius: 12px; 
+    height: 500px;
+
+}
+
+#corumslide img{
+    border: 3px solid rgba(68, 68, 68, 1); 
+    height: 550px;
+}
+
+#gezilecekyer img{
+   
+    height: 650px;
+    border-radius: 15px; 
+}
+
+#gezilecekyerler {
+    font-size: 20px;
+   
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+    border-radius: 15px; 
+}
+
+
+#gez{
+
+    font-size: 20px;
+    width: 60%; 
+            margin: 50px auto; 
+            border-radius: 15px; 
+            top: 20px; 
+            left: 20px; 
+}
+
+#gez img{
+   
+    border-radius: 12px; 
+
+}
+
+#tarihi {
+    
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+    top: 50%; /* Üst kenarını sayfanın ortasına getiriyoruz */
+    left: 50%; /* Sol kenarını sayfanın ortasına getiriyoruz */
+    transform: translate(-50%, -50%); /* Yatay ve dikeyde ortalamak için negatif değerlerle hareket ettiriyoruz */
+    width: 70%;
+    border-radius: 15px; 
+}
+
+#tarihi img {
+    border-radius: 15px; 
+   
+    height: 700px;
+}
+
+#corum{
+    width: 100%; 
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+    border-radius: 15px; 
+}
+
+
+
+#corumbilgi{
+    font-size: 20px;
+    width: 700px; 
+    font-weight: bold; 
+            margin: 50px auto; 
+            background-color: rgba(145, 196, 219, 0.6);
+            padding: 20px; /* İç boşluk */
+            border: 3px solid rgba(68, 68, 68, 1); 
+            border-radius: 15px; 
+            position: relative; 
+            top: 20px; 
+            left: 20px; 
+            text-align: center;
+
+}
+
+#corum img{
+
+height: 400px;
+border-radius: 12px; 
+
+}
+
+#slideaciklama{
+    font-size: 20px;
+    width: 50%; 
+    font-weight: bold; 
+            margin: 50px auto; 
+            background-color: rgba(145, 196, 219, 0.6);
+            padding: 20px; /* İç boşluk */
+            border: 3px solid rgba(68, 68, 68, 1); 
+            border-radius: 15px; 
+            position: relative; 
+            top: 20px; 
+            left: 20px; 
+            text-align: center;
+
+}
+
+#hesap{
+    border-radius: 15px; 
+    font-size: 20px;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+
+}
+
+#hesaplar{
+    border-radius: 15px; 
+    width: 450px;
+  height: 200px;
+}
+
+#havadurumu{
+    font-size: 20px;
+    border-radius: 15px; 
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+}
+
+#login{
+    width: 40%;
+    border-radius: 15px; 
+height: 350px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(145, 196, 219, 0.6);
+    border: 3px solid rgba(68, 68, 68, 1); 
+}
+
+#iletisimformu{
+    text-align: center;
+    width: 650px;
+    border-radius: 15px; 
+    height: 1200px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(145, 196, 219, 0.6);
+        border: 3px solid rgba(68, 68, 68, 1); 
+
+}
+
+
+#formmm{
+    text-align: center;
+    width: 40%;
+    height: 1000px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 50px auto; 
+        background-color: rgba(145, 196, 219, 0.6);
+        padding: 20px; /* İç boşluk */
+        border: 3px solid rgba(68, 68, 68, 1); 
+        border-radius: 15px; 
+        position: relative; 
+}
+
+#formmm hr{
+
+    border: 3px solid rgba(68, 68, 68, 1);
+
+}
+
+
+
+
+
+
