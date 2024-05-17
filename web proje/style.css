@@ -261,7 +261,7 @@ footer {
 
 #corumbilgi{
     font-size: 20px;
-    width: 700px; 
+    width: 400px; 
     font-weight: bold; 
             margin: 50px auto; 
             background-color: rgba(145, 196, 219, 0.6);
@@ -331,15 +331,16 @@ height: 350px;
 
 #iletisimformu{
     text-align: center;
-    width: 650px;
+    width: 40%;
     border-radius: 15px; 
-    height: 1200px;
+    height: 1500px;
         font-size: 20px;
         font-weight: bold;
         background-color: rgba(145, 196, 219, 0.6);
         border: 3px solid rgba(68, 68, 68, 1); 
 
 }
+
 
 
 #formmm{

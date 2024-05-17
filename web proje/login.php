@@ -53,6 +53,5 @@ if ($email == $dogrumail && $password == $dogrusifre) {
     <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner -Hakkımda</p>
 </footer>
 
-<script src="javaislemi.js"></script>
 </body>
 </html>
