@@ -10,19 +10,27 @@
 </head>
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">HAKKIMDA</a>
-
-    <nav class="navbar">
-    <a href="index.html">Hakkımda</a>
-        <a href="ozgecmis.html">Özgeçmiş</a>
-        <a href="sehrim.html">Şehrim</a>
-        <a href="mirasimiz.html">Mirasımız</a>
-        <a href="havadurumu.html">Hava Durumu</a>
-        <a href="login.html">Log in</a>
-        <a href="iletisimformu.html">Form Oluştur</a>
-    </nav>
-</header>
+<header>
+        <div class="container" id="arayuz">
+            <div class="logo">FORM</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Hakkımda</a></li>
+                    <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+                    <li><a href="sehrim.html">Şehrim</a></li>
+                    <li><a href="mirasimiz.html">Mirasımız</a></li>
+                    <li><a href="havadurumu.html">Hava Durumu</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="iletisimformu.html">İletişim Formu</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
 
 <br><br><br><br><br>
 
@@ -36,7 +44,10 @@ $dogrusifre ="B231210097";
 
 // Kullanıcı adı ve şifre kontrolü, bu örnek basit bir kontrol şeklidir, gerçek bir uygulamada daha karmaşık olmalıdır
 if ($email == $dogrumail && $password == $dogrusifre) {
-    header('Location: index.html');
+    echo '<div class="alert alert-danger" role="alert">
+            GİRİŞ BAŞARILI ANASAYFAYA YÖNLENDİRİLİYORSUNUZ.
+          </div>';
+    echo '<script>setTimeout(function(){window.location.href = "index.html";}, 2000);</script>';
 } else  {
     // Eğer kullanıcı adı veya şifre yanlışsa, kullanıcıyı tekrar giriş sayfasına yönlendir ve bilgi ver
     echo '<div class="alert alert-danger" role="alert">
@@ -52,6 +63,6 @@ if ($email == $dogrumail && $password == $dogrusifre) {
 <footer>
     <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner -Hakkımda</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

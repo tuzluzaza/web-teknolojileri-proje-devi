@@ -11,24 +11,29 @@
 </head>
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">İLETİŞİM FORMU</a>
+    <header>
+        <div class="container" id="arayuz">
+            <div class="logo">FORM</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Hakkımda</a></li>
+                    <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+                    <li><a href="sehrim.html">Şehrim</a></li>
+                    <li><a href="mirasimiz.html">Mirasımız</a></li>
+                    <li><a href="havadurumu.html">Hava Durumu</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="iletisimformu.html">İletişim Formu</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
 
-
-
-<nav class="navbar">
-    <a href="index.html">Hakkımda</a>
-    <a href="ozgecmis.html">Özgeçmiş</a>
-    <a href="sehrim.html">Şehrim</a>
-    <a href="mirasimiz.html">Mirasımız</a>
-    <a href="havadurumu.html">Hava Durumu</a>
-    <a href="login.html">Log in</a>
-    <a href="iletisimformu.html">Form Oluştur</a>
-</nav>
-
-</header>
-
-<br><br><br><br><br>
+<br><br><br>
 
 <div class="container" id="corumbilgi">
 
@@ -57,7 +62,7 @@
         <input type="radio" id="kadin" name="cinsiyet" value="Kadın" required>
         <label for="kadin">Kadın</label><br><br>
 
-        <label for="fotograf">Fotoğraf Seçiniz:</label><br>
+        <label for="fotograf" >Fotoğraf Seçiniz:</label><br>
 <input type="file" id="fotograf" name="fotograf" accept="image/*"><br><br>
         
         <label for="yas">Yaş Aralığı:</label><br>
@@ -101,6 +106,7 @@
         
         <input type="submit" value="Javascript ile gönder" >
         <button type="button" id="jquerySubmit" >jQuery ile giriş yap</button>
+        <button type="button" id="temizleButton">Formu Temizle</button>
     </div>
   </div>
 
@@ -112,7 +118,7 @@
 <footer>
     <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner - İletişim Formu</p>
 </footer>
-
+<script src="script.js"></script>
 <script src="iletisimform.js"></script>
 </body>
 </html>

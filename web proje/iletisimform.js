@@ -52,4 +52,12 @@ $(document).ready(function() {
             $('#contactForm').submit(); // Formu gönderiyoruz
         }
     });
+    
 });
+var temizleButton = document.getElementById("temizleButton");
+
+        // Temizle butonuna tıklanınca çalışacak fonksiyon
+        temizleButton.addEventListener("click", function() {
+            // Tüm form alanlarını sıfırla
+            document.getElementById("contactForm").reset();
+        });

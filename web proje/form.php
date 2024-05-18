@@ -12,22 +12,27 @@
 </head>
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">İLETİŞİM FORMU</a>
-
-
-
-<nav class="navbar">
-<a href="index.html">Hakkımda</a>
-    <a href="ozgecmis.html">Özgeçmiş</a>
-    <a href="sehrim.html">Şehrim</a>
-    <a href="mirasimiz.html">Mirasımız</a>
-    <a href="havadurumu.html">Hava Durumu</a>
-    <a href="login.html">Log in</a>
-    <a href="iletisimformu.html">Form Oluştur</a>
-</nav>
-
-</header>
+<header>
+        <div class="container" id="arayuz">
+            <div class="logo">FORM</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Hakkımda</a></li>
+                    <li><a href="ozgecmis.html">Özgeçmiş</a></li>
+                    <li><a href="sehrim.html">Şehrim</a></li>
+                    <li><a href="mirasimiz.html">Mirasımız</a></li>
+                    <li><a href="havadurumu.html">Hava Durumu</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="iletisimformu.html">İletişim Formu</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
 
 <br><br><br><br><br>
 
@@ -42,7 +47,7 @@
 
 <div class="container" id="formmm">
 
-    <h2>FORM BILGILERI</h2>
+    <h2>FORM BİLGİLERİ</h2>
     <br>
     <?php
     // Formdan gelen bilgileri al
@@ -92,5 +97,6 @@
     <p>Telif Hakkı © 2024 - Abdullah Anıl Çobaner - İletişim Formu</p>
 </footer>
 <script src="form.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
